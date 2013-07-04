@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+   id="ontoindexer"
+   name="OntoIndexer"
+   version="1.0.0"
+   provider-name="Algito">
+
+
+   <runtime>
+      <library name="ontoindexer.jar">
+         <export name="*"/>
+      </library>
+   </runtime>
+
+   <requires>
+      <import plugin="nutch-extensionpoints"/>
+   </requires>
+
+   <extension      id="org.apache.nutch.indexer.ontoindexer"
+                    name="OntoIndexer"
+                    point="org.apache.nutch.indexer.IndexingFilter">
+   <implementation id="indexer-ontoparser"
+                    class="org.apache.nutch.indexer.ontoindexer.OntoIndexer"/>
+   </extension>
+</plugin>
