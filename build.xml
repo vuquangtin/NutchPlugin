@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<project name="ontoparser" default="jar-core">
+<project name="ontoindexer" default="jar-core">
 
   <import file="../build-plugin.xml"/>
 

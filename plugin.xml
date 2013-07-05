@@ -18,8 +18,8 @@
 
    <extension      id="org.apache.nutch.indexer.ontoindexer"
                     name="OntoIndexer"
-                    point="org.apache.nutch.indexer.IndexingFilter">
-   <implementation id="indexer-ontoindexer"
-                    class="org.apache.nutch.indexer.ontoindexer.OntoIndexer"/>
+                    point="org.apache.nutch.indexer.IndexWriter">
+   <implementation id="OntoIndexer"
+                    class="org.apache.nutch.indexer.ontoindexer.OntoIndexerWriter"/>
    </extension>
 </plugin>
