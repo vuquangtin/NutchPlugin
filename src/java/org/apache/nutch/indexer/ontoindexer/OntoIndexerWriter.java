@@ -1,7 +1,5 @@
 package org.apache.nutch.indexer.ontoindexer;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
 
 import org.apache.hadoop.conf.Configuration;
