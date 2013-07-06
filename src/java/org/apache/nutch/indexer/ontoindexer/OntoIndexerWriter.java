@@ -3,15 +3,9 @@ package org.apache.nutch.indexer.ontoindexer;
 import java.io.IOException;
 
 import org.apache.hadoop.conf.Configuration;
-import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapred.JobConf;
-import org.apache.nutch.crawl.CrawlDatum;
-import org.apache.nutch.crawl.Inlinks;
 import org.apache.nutch.indexer.IndexWriter;
-import org.apache.nutch.indexer.IndexingException;
-import org.apache.nutch.indexer.IndexingFilter;
 import org.apache.nutch.indexer.NutchDocument;
-import org.apache.nutch.parse.Parse;
 
 public class OntoIndexerWriter implements IndexWriter{
 	private Configuration conf;
