@@ -1,0 +1,13 @@
+keyword_database_name = KeywordDB 
+keyword_databse_user = root
+keyword_database_password = ubuntu
+keyword_databse_server_ip = 192.168.0.126
+keyword_databse_server_port = 3306
+available_keyword_limit = 1000
+
+url_database_name = UrlDB
+url_databse_user = root
+url_database_password = 
+url_databse_server_ip = localhost
+url_databse_server_port = 3306
+available_url_limit = 1000
