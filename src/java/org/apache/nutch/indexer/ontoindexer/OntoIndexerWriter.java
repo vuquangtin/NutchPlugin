@@ -37,8 +37,7 @@ public class OntoIndexerWriter implements IndexWriter{
 	@Override
 	public void write(NutchDocument doc) throws IOException {
 		System.out.println("Salve, sono OntoIndexer");
-		//XXX come si fa a prendere l'url da un NutchDocument?
-		UrlMySQLInterface.getinstance().addUrl("www.trova l'url dal NutchDocument .com");
+		UrlMySQLInterface.getinstance().addUrl(doc.getField("url").toString());
 	}
 
 	@Override
