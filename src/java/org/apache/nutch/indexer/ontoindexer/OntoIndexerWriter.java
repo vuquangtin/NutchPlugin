@@ -30,8 +30,11 @@ public class OntoIndexerWriter implements IndexWriter{
 
 	@Override
 	public void write(NutchDocument doc) throws IOException {
-		System.out.println("Indexed document: " + doc.getField("url").toString());
-		UrlMySQLInterface.getinstance().addUrl(doc.getField("url").toString());
+		//TODO: trovare un modo elegante per togliere le parentesi quadre che racchiudono gli url
+		String url = doc.getField("url").toString();
+		url = url.substring(1, url.length()-1);
+		System.out.println("Indexed document: " + url);
+		UrlMySQLInterface.getinstance().addUrl(url);
 	}
 
 	@Override
