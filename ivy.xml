@@ -17,6 +17,7 @@
   </publications>
 
   <dependencies>
+	<dependency org="mysql" name="mysql-connector-java" rev="5.1.25"/>
   </dependencies>
   
 </ivy-module>

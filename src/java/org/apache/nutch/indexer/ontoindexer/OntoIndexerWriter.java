@@ -66,8 +66,7 @@ public class OntoIndexerWriter implements IndexWriter{
 
 	@Override
 	public String describe() {
-		// TODO Auto-generated method stub
-		return null;
+		return "OntoIndexer";
 	}
 
 	
