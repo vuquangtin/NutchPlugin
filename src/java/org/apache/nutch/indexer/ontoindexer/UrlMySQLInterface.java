@@ -58,7 +58,8 @@ public class UrlMySQLInterface {
 				query = "UPDATE Website SET booking=FALSE, date_of_booking=DEFAULT";
 			}
 			else{
-				query = "INSERT INTO Website VALUES (\"" + url + "\", " + "FALSE" + ", DEFAULT)";
+				//XXX: la parentesi prima di VALUES mi sembra poco elegante
+				query = "INSERT INTO Website (url, booked, date_of_booking) VALUES (\"" + url + "\", " + "FALSE" + ", DEFAULT)";
 			}
 			st.executeUpdate(query);
 		}
