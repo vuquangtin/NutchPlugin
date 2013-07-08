@@ -16,7 +16,7 @@ public class Configuration {
 	static{
 		Properties p = new Properties();
 		InputStream in = null;
-		String path = "plugins/ontoindexer/config/ontostar.properties";
+		String path = System.getenv("ONTO_CONFIG") + "/ontostar.properties";
 		try {
 			in = new FileInputStream(path);
 			p.load(in);
