@@ -33,7 +33,8 @@ public class OntoIndexerWriter implements IndexWriter{
 		//TODO: trovare un modo elegante per togliere le parentesi quadre che racchiudono gli url
 		String url = doc.getField("url").toString();
 		url = url.substring(1, url.length()-1);
-		System.out.println("Indexed document: " + url);
+		//Va più veloce se non scrive a video
+		//System.out.println("Indexed document: " + url);
 		UrlMySQLInterface.getinstance().addUrl(url);
 	}
 
