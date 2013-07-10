@@ -55,11 +55,10 @@ public class UrlMySQLInterface {
 			String query = "SELECT url FROM Website WHERE url=\"" + url + "\"";
 			rs = st.executeQuery(query);
 			if(rs.next()){
-				query = "UPDATE Website SET booked=FALSE, date_of_booking=DEFAULT";
+				query = "UPDATE Website SET processing_status=DEFAULT, date_of_booking=DEFAULT WHERE url=\"" + url + "\"";
 			}
 			else{
-				//XXX: la parentesi prima di VALUES mi sembra poco elegante
-				query = "INSERT INTO Website (url, booked, date_of_booking) VALUES (\"" + url + "\", " + "FALSE" + ", DEFAULT)";
+				query = "INSERT INTO Website (url) VALUES (\"" + url + "\")";
 			}
 			st.executeUpdate(query);
 		}
