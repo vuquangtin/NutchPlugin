@@ -1,0 +1,1 @@
+Attualmente c'è bisogno di posizione il jar di mysql nella cartella nutch/runtime/local/lib
