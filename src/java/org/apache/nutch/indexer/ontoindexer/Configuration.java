@@ -31,10 +31,10 @@ public class Configuration {
 		}
 		
 		urlDBName = p.getProperty("url_database_name").trim();
-		urlDBUser = p.getProperty("url_databse_user").trim();
+		urlDBUser = p.getProperty("url_database_user").trim();
 		urlDBPassword = p.getProperty("url_database_password").trim();
-		urlDBServerIp = p.getProperty("url_databse_server_ip").trim();
-		urlDBServerPort = p.getProperty("url_databse_server_port").trim();
+		urlDBServerIp = p.getProperty("url_database_server_ip").trim();
+		urlDBServerPort = p.getProperty("url_database_server_port").trim();
 		
 		try {
 			in.close();
